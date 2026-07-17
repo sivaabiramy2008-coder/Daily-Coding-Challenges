@@ -22,3 +22,31 @@ Given a string containing the characters '(', ')', '{', '}', '[' and ']', determ
 
 ### Files
 - ValidParentheses.java
+
+
+
+
+
+## Problem 2
+
+**Problem Name:** Search Insert Position
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Binary Search
+
+**Time Complexity:** O(log n)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given a sorted array of distinct integers and a target value, return the index if the target is found. Otherwise, return the index where it would be inserted while maintaining the sorted order.
+
+## Files
+
+- SearchInsertPosition.java
