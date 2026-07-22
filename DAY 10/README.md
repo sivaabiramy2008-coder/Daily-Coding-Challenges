@@ -23,3 +23,29 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, ret
 ## Files
 
 - MissingNumber.java
+
+# Day 10 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Move Zeroes
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Two Pointers + In-place Swapping
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given an integer array `nums`, move all `0`s to the end of the array while maintaining the relative order of the non-zero elements. The operation must be performed in-place without creating another array.
+
+## Files
+
+- MoveZeroes.java
