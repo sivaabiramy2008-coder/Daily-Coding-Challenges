@@ -23,3 +23,29 @@ Given a 0-indexed integer array `nums`, return an array `answer` such that `answ
 ## Files
 
 - LeftAndRightSumDifferences.java
+
+# Day 13 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Count Partitions with Even Sum Difference
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Prefix Sum + Array Traversal + Even Difference Check
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given an integer array `nums`, count the number of valid partitions where the difference between the sum of the left partition and the sum of the right partition is an even number.
+
+## Files
+
+- CountPartitionsWithEvenSumDifference.java
