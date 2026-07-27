@@ -23,3 +23,35 @@ Given an integer array `nums` representing the amount of money in each house, re
 ## Files
 
 - HouseRobber.java
+
+# Day 14 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Power of Two
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Bit Manipulation (Bitwise AND)
+
+**Time Complexity:** O(1)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given an integer `n`, return `true` if it is a power of two. Otherwise, return `false`.
+
+An integer `n` is a power of two if there exists an integer `x` such that:
+
+```
+n = 2^x
+```
+
+## Files
+
+- PowerOfTwo.java
