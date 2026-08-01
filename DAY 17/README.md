@@ -2,7 +2,7 @@
 
 ## Problem 1
 
-**Problem Name:** Maximum 69 Number
+**Problem Name:** Reverse Bits
 
 **Platform:** LeetCode
 
@@ -10,16 +10,16 @@
 
 **Language:** Java
 
-**Approach:** String Conversion + Character Array + Greedy
+**Approach:** Bit Manipulation
 
-**Time Complexity:** O(n)
+**Time Complexity:** O(1)
 
-**Space Complexity:** O(n)
+**Space Complexity:** O(1)
 
 ## Problem Statement
 
-You are given a positive integer consisting only of the digits `6` and `9`. Change **at most one digit** (`6` to `9`) to obtain the maximum possible number, and return the resulting value.
+Reverse the bits of a given 32-bit unsigned integer and return the resulting integer.
 
 ## Files
 
-- Maximum69Number.java
+- ReverseBits.java
