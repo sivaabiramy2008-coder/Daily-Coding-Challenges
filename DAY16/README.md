@@ -23,3 +23,30 @@ Given an integer array `nums`, return the minimum number of increments needed to
 ## Files
 
 - MinimumIncrementToMakeArrayUnique.java
+
+
+# Day 16 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Maximum Number of Balloons
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Frequency Array (Character Counting)
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given a string `text`, return the maximum number of times you can form the word **"balloon"** using the characters in `text`. Each character can be used only once.
+
+## Files
+
+- MaximumNumberOfBalloons.java
