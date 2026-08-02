@@ -23,3 +23,29 @@ Given an integer array `nums` and an integer `k`, return `true` if there are two
 ## Files
 
 - ContainsDuplicateII.java
+
+# Day 20 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Largest Perimeter Triangle
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Sorting + Greedy
+
+**Time Complexity:** O(n log n)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given an integer array `nums` representing the side lengths of triangles, return the largest possible perimeter of a triangle with a non-zero area. If no valid triangle can be formed, return `0`.
+
+## Files
+
+- LargestPerimeterTriangle.java
