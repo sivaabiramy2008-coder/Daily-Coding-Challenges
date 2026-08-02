@@ -50,3 +50,26 @@ Given a non-negative integer `n`, return its complement by flipping every bit in
 ## Files
 
 - ComplementOfBase10Integer.java
+
+
+# Day 18 - LeetCode Solutions
+
+## Problem 3
+
+**Problem Name:** Number of 1 Bits
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Bit Manipulation
+
+**Time Complexity:** O(32) ≈ O(1)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given a positive integer, return the number of `
