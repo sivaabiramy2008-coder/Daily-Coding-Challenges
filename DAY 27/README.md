@@ -29,3 +29,35 @@ If `n` is a multiple of 4, the first player will lose with optimal play. Otherwi
 ## Files
 
 - NimGame.java
+
+- # Day 26 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Power of Four
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Bit Manipulation / Mathematics
+
+**Time Complexity:** O(1)
+
+**Space Complexity:** O(1)
+
+## Problem Statement
+
+Given an integer `n`, return `true` if it is a power of four. Otherwise, return `false`.
+
+A number is a power of four if it can be written as `4^x` where `x` is an integer.
+
+## Key Idea
+
+A positive power of four must be a power of two, and its single set bit must appear at an even position.
+
+## Files
+
+- PowerOfFour.java
