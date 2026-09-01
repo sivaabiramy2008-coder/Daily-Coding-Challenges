@@ -30,6 +30,39 @@ If:
 
 `Integer.bitCount(hour) + Integer.bitCount(minute) == turnedOn`
 
+# Day 31 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Unique Morse Code Words
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** String Manipulation + HashSet
+
+**Time Complexity:** O(n × m)
+
+**Space Complexity:** O(n × m)
+
+## Problem Statement
+
+Given an array of words, convert each word into its Morse code representation and return the number of unique Morse code transformations.
+
+## Key Idea
+
+- Use a `String[]` to store Morse codes for all 26 lowercase English letters.
+- Use `StringBuilder` to construct the Morse representation of each word.
+- Use a `HashSet` to store only unique transformations.
+- Return the size of the `HashSet`.
+
+## Files
+
+- UniqueMorseCodeWords.java
+
 then the time is valid and is added to the result.
 
 ## Files
