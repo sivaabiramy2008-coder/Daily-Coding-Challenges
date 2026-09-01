@@ -35,3 +35,35 @@ to check whether `x` consists entirely of `1`s.
 ## Files
 
 - BinaryNumberWithAlternatingBits.java
+
+# Day 29 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Self Dividing Numbers
+
+**Platform:** LeetCode
+
+**Difficulty:** Easy
+
+**Language:** Java
+
+**Approach:** Mathematics + Digit Extraction
+
+**Time Complexity:** O(n × d), where `n` is the range size and `d` is the number of digits
+
+**Space Complexity:** O(n) for the output list
+
+## Problem Statement
+
+Given two integers `left` and `right`, return a list of all the self-dividing numbers in the range `[left, right]`.
+
+A self-dividing number is a number that is divisible by every digit it contains. A number containing the digit `0` is not considered a self-dividing number.
+
+## Key Idea
+
+Extract each digit using `% 10` and remove the last digit using `/ 10`. For every digit, check whether the original number is divisible by that digit.
+
+## Files
+
+- SelfDividingNumbers.java
