@@ -65,3 +65,80 @@ true
 ## Files
 
 * `RotateString.java`
+
+* # Day 35 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Arranging Coins
+**Problem Number:** 441
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** Java
+
+## Problem Statement
+
+Given `n` coins, arrange them in a staircase where:
+
+* Row 1 needs 1 coin
+* Row 2 needs 2 coins
+* Row 3 needs 3 coins
+* And so on.
+
+Return the number of **complete rows** that can be formed.
+
+## Key Idea
+
+Think of the coins as a **right-angle staircase**.
+
+For every row:
+
+1. Check whether enough coins are available.
+2. Subtract the required number of coins.
+3. Increase the completed row count.
+4. Move to the next row.
+5. Stop when there are not enough coins for the next row.
+
+## Approach
+
+1. Initialize `count = 0`.
+2. Start the row number from `1`.
+3. Check whether `n >= row`.
+4. Subtract `row` from `n`.
+5. Increase `count`.
+6. Continue until the next row cannot be completed.
+7. Return `count`.
+
+## Example
+
+**Input:**
+
+```text
+n = 8
+```
+
+**Process:**
+
+```text
+Row 1 → 8 - 1 = 7
+Row 2 → 7 - 2 = 5
+Row 3 → 5 - 3 = 2
+Row 4 → Not enough coins
+```
+
+Therefore:
+
+```text
+Output = 3
+```
+
+## Complexity
+
+**Time Complexity:** O(√n)
+
+**Space Complexity:** O(1)
+
+## Files
+
+* `ArrangingCoins.java`
+
