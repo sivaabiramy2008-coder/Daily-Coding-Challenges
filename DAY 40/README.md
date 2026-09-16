@@ -73,3 +73,80 @@ Number of perfect squares = `3`
 ## Files
 
 * `BulbSwitcher.java`
+
+# Day 40- LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Merge Two Binary Trees
+**Problem Number:** 617
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** Java
+
+## Problem Statement
+
+Given two binary trees, merge them into a single binary tree.
+
+If two nodes overlap at the same position, add their values together.
+
+If only one tree has a node at a particular position, use that existing node in the merged tree.
+
+## Key Idea
+
+Use **Recursion** to traverse both binary trees simultaneously.
+
+* If `root1` is `null`, return `root2`.
+* If `root2` is `null`, return `root1`.
+* If both nodes exist, add their values.
+* Recursively merge the left subtrees.
+* Recursively merge the right subtrees.
+
+## Approach
+
+1. Start with the root nodes of both trees.
+2. Check if either node is `null`.
+3. If `root1` is `null`, return `root2`.
+4. If `root2` is `null`, return `root1`.
+5. Add the values of both nodes.
+6. Recursively merge the left children.
+7. Recursively merge the right children.
+8. Return the merged tree.
+
+## Example
+
+**Input:**
+
+```text id="r3qf6k"
+Tree 1:        Tree 2:
+
+    1              2
+   / \            / \
+  3   2          1   3
+ /              \
+5                4
+```
+
+**Output:**
+
+```text id="3n0s5p"
+      3
+     / \
+    4   5
+   / \
+  5   4
+```
+
+The overlapping node values are added together.
+
+## Complexity
+
+**Time Complexity:** `O(n)`
+**Space Complexity:** `O(h)`
+
+Where `n` is the number of nodes processed and `h` is the height of the tree.
+
+## Files
+
+* `MergeTwoBinaryTrees.java`
+
