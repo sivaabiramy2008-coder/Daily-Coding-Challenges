@@ -65,6 +65,72 @@ The peak value is `4`, which is present at index `2`.
 
 **Time Complexity:** O(n)
 
+
+# Day 37 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Reverse Prefix of Word
+**Problem Number:** 2000
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** Java
+
+## Problem Statement
+
+Given a string `word` and a character `ch`, reverse the substring of `word` that starts at index `0` and ends at the first occurrence of `ch`.
+
+If `ch` does not appear in `word`, return the original string.
+
+## Key Idea
+
+* Find the **first occurrence** of `ch` in the string.
+* Use a `for` loop to search for `ch`.
+* Once `ch` is found, use two pointers to reverse the prefix.
+* Use a `while` loop with `left` and `right` pointers.
+* Keep all characters after `ch` unchanged.
+* If `ch` is not found, return the original string.
+
+## Approach
+
+1. Start searching from the first character of `word`.
+2. Use a `for` loop to find the first occurrence of `ch`.
+3. Store the index of the first occurrence.
+4. If `ch` is not found, return the original string.
+5. Convert the string into a character array so that characters can be modified.
+6. Set `left` to the first index and `right` to the index of `ch`.
+7. Use a `while` loop to swap the characters at `left` and `right`.
+8. Move `left` forward and `right` backward.
+9. Continue until the prefix is completely reversed.
+10. Convert the character array back into a string and return it.
+
+## Example
+
+**Input:**
+
+```text
+word = "abcdefd"
+ch = "d"
+```
+
+**First occurrence of `d`:**
+
+```text
+a  b  c  d  e  f  d
+0  1  2  3  4  5  6
+         ↑
+      index 3
+```
+
+**Reverse the prefix:**
+
+```text
+a  b  c  d
+↓  ↓  ↓  ↓
+d  c  b  a
+```
+
+
 **Space Complexity:** O(1)
 
 ## Files
