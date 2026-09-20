@@ -36,7 +36,7 @@ left height + right height
 
 
 
-# Day 42 - LeetCode Solutions
+**# Day 42 - LeetCode Solutions**
 
 ## Problem 2
 
