@@ -35,6 +35,9 @@ The diameter passing through a node is:
 left height + right height
 
 
+
+
+
 # Day 42 - LeetCode Solutions
 
 ## Problem 2
