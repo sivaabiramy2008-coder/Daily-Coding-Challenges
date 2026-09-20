@@ -1,0 +1,16 @@
+class Solution {
+    public int countNumbersWithUniqueDigits(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int result = 10;
+        int count = 9;
+        int available = 9;
+        for (int i = 2; i <= n; i++) {
+            count = count * available;
+            result += count;
+            available--;
+        }
+        return result;
+    }
+}
