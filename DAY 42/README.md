@@ -41,7 +41,7 @@ left height + right height
 
 ## Problem 2
 
-****Problem Name**:** [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)
+**Problem Name:** [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)
 **Problem Number:** 610
 **Platform:** LeetCode
 **Difficulty:** Easy
