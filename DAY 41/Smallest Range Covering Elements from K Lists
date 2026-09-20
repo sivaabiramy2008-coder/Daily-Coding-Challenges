@@ -1,0 +1,38 @@
+class Solution {
+    public int[] smallestRange(List<List<Integer>> nums) {
+        PriorityQueue<int[]> pq = new PriorityQueue<>(
+            (a, b) -> Integer.compare(a[0], b[0])
+        );
+        int k = nums.size();
+        int currentMax = Integer.MIN_VALUE;
+        for (int i = 0; i < k; i++) {
+            int value = nums.get(i).get(0);
+            pq.offer(new int[]{value, i, 0});
+            currentMax = Math.max(currentMax, value);
+        }
+        int rangeLeft = pq.peek()[0];
+        int rangeRight = currentMax;
+        while (pq.size() == k) {
+            int[] current = pq.poll();
+            int minValue = current[0];
+            int listIndex = current[1];
+            int elementIndex = current[2];
+            if (currentMax - minValue < rangeRight - rangeLeft) {
+                rangeLeft = minValue;
+                rangeRight = currentMax;
+            }
+            int nextIndex = elementIndex + 1;
+            if (nextIndex >= nums.get(listIndex).size()) {
+                break;
+            }
+            int nextValue = nums.get(listIndex).get(nextIndex);
+            pq.offer(new int[]{
+                nextValue,
+                listIndex,
+                nextIndex
+            });
+            currentMax = Math.max(currentMax, nextValue);
+        }
+        return new int[]{rangeLeft, rangeRight};
+    }
+}
