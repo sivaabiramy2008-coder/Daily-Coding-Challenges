@@ -122,9 +122,124 @@ Since there are only 10 unique decimal digits, the loop runs at most 10 times.
 
 * `Count Numbers with Unique Digits.java`
 
-## LeetCode Link
 
-[https://leetcode.com/problems/count-numbers-with-unique-digits/](https://leetcode.com/problems/count-numbers-with-unique-digits/)
 
+# Day 43 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** [Relative Ranks](https://leetcode.com/problems/relative-ranks/)
+**Problem Number:** 506
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** Java
+
+## Problem Statement
+
+Given an integer array `score` where `score[i]` represents the score of the `i`th athlete, return an array of strings `answer` where `answer[i]` is the rank of the `i`th athlete.
+
+The highest score receives the `Gold Medal`, the second highest receives the `Silver Medal`, and the third highest receives the `Bronze Medal`.
+
+All other athletes receive their numerical rank.
+
+## Input
+
+```text
+score = [5, 4, 3, 2, 1]
+````
+
+## Output
+
+```text
+["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
 ```
+
+## Explanation
+
+The athletes are ranked based on their scores.
+
+* The athlete with score `5` gets the `Gold Medal`.
+* The athlete with score `4` gets the `Silver Medal`.
+* The athlete with score `3` gets the `Bronze Medal`.
+* The athlete with score `2` gets rank `4`.
+* The athlete with score `1` gets rank `5`.
+
+Therefore, the output is:
+
+```text
+["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
 ```
+
+## Key Idea
+
+Use sorting to determine the rank of each athlete.
+
+The scores are sorted in ascending order. The position of each score in the sorted array is used to determine its rank.
+
+The top three ranks are replaced with:
+
+* `Gold Medal`
+* `Silver Medal`
+* `Bronze Medal`
+
+All remaining ranks are stored as numbers in string format.
+
+## Approach
+
+1. Create a result array to store the rank of each athlete.
+2. Create a copy of the original `score` array.
+3. Sort the copied array.
+4. For each original score, find its position in the sorted array.
+5. Calculate the rank based on the position.
+6. If the rank is `1`, assign `Gold Medal`.
+7. If the rank is `2`, assign `Silver Medal`.
+8. If the rank is `3`, assign `Bronze Medal`.
+9. For all other athletes, store their numerical rank as a string.
+10. Return the result array.
+
+## Example
+
+**Input:**
+
+```text
+score = [5, 4, 3, 2, 1]
+```
+
+**Output:**
+
+```text
+["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
+```
+
+**Explanation:**
+
+```text
+Score 5 → Gold Medal
+Score 4 → Silver Medal
+Score 3 → Bronze Medal
+Score 2 → Rank 4
+Score 1 → Rank 5
+```
+
+## Data Structure / Concept
+
+**Concept:** Array, Sorting, Binary Search
+
+The solution uses an array to store the scores and another sorted array to determine the rank of each athlete.
+
+`Arrays.sort()` is used to sort the scores, and `Arrays.binarySearch()` is used to find the position of each score.
+
+## Complexity
+
+**Time Complexity:** O(n log n)
+
+Sorting the scores takes O(n log n), and finding each score using binary search takes O(log n).
+
+**Space Complexity:** O(n)
+
+An additional array is used to store the sorted scores and another array is used for the result.
+
+## Files
+
+* `Relative Ranks.java`
+
