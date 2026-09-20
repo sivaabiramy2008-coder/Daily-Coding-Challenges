@@ -1,6 +1,6 @@
 # Day 42 - LeetCode Solutions
 
-## Problem 2
+## Problem 1
 
 **Problem Name:** [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 **Problem Number:** 543
@@ -35,12 +35,11 @@ The diameter passing through a node is:
 left height + right height
 
 
-
-**# Day 42 - LeetCode Solutions**
+# Day 42 - LeetCode Solutions
 
 ## Problem 2
 
-**Problem Name:** [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)
+**Problem Name:** Triangle Judgement
 **Problem Number:** 610
 **Platform:** LeetCode
 **Difficulty:** Easy
@@ -48,21 +47,42 @@ left height + right height
 
 ## Problem Statement
 
-Given three side lengths `x`, `y`, and `z`, determine whether they can form a valid triangle.
+Given three side lengths `x`, `y`, and `z`, determine whether these three sides can form a valid triangle.
 
-A valid triangle must satisfy the following conditions:
+A valid triangle must satisfy all three conditions:
 
-- `x + y > z`
-- `x + z > y`
-- `y + z > x`
+* `x + y > z`
+* `x + z > y`
+* `y + z > x`
 
-If all three conditions are true, return `Yes`; otherwise, return `No`.
+If all three conditions are satisfied, return `Yes`; otherwise, return `No`.
 
 ## Key Idea
 
-Use a `CASE` statement to check all three triangle conditions.
+Use a **CASE statement** to check whether the three sides satisfy the triangle inequality.
 
-If all conditions are satisfied:
+If all three conditions are true, the result is `Yes`.
+
+Otherwise, the result is `No`.
+
+## Approach
+
+1. Select the three side lengths `x`, `y`, and `z`.
+2. Use a `CASE` statement to check all three triangle conditions.
+3. Check whether `x + y > z`.
+4. Check whether `x + z > y`.
+5. Check whether `y + z > x`.
+6. If all three conditions are true, return `Yes`.
+7. Otherwise, return `No`.
+
+## Example
+
+**Input:**
 
 ```text
-Yes
+x   y   z
+13  15  17
+1   2   3
+8   10  5
+
+
