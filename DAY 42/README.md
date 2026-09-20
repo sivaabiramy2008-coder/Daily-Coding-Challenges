@@ -1,6 +1,6 @@
 # Day 42 - LeetCode Solutions
 
-## Problem 1
+## Problem 2
 
 **Problem Name:** [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 **Problem Number:** 543
@@ -33,3 +33,36 @@ The diameter passing through a node is:
 
 ```text
 left height + right height
+
+
+
+# Day 42 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)
+**Problem Number:** 610
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Language:** SQL
+
+## Problem Statement
+
+Given three side lengths `x`, `y`, and `z`, determine whether they can form a valid triangle.
+
+A valid triangle must satisfy the following conditions:
+
+- `x + y > z`
+- `x + z > y`
+- `y + z > x`
+
+If all three conditions are true, return `Yes`; otherwise, return `No`.
+
+## Key Idea
+
+Use a `CASE` statement to check all three triangle conditions.
+
+If all conditions are satisfied:
+
+```text
+Yes
