@@ -120,3 +120,105 @@ Only 6 DP states are maintained at any time.
 ## Files
 
 * `StudentAttendanceRecordII.java`
+
+# Day 41 - LeetCode Solutions
+
+## Problem 2
+
+**Problem Name:** Smallest Range Covering Elements from K Lists
+**Problem Number:** 632
+**Platform:** LeetCode
+**Difficulty:** Hard
+**Language:** Java
+
+## Problem Statement
+
+You are given `k` sorted lists.
+
+Find the smallest range `[a, b]` such that at least one element from every list is included in the range.
+
+If multiple ranges have the same size, the range with the smaller starting value is preferred.
+
+## Key Idea
+
+Use a **PriorityQueue (Min Heap)** to keep track of the smallest current element from each list.
+
+At any point:
+
+* `minimum` → smallest element in the heap
+* `currentMax` → largest current element
+* Current range → `[minimum, currentMax]`
+
+When the smallest element is removed from the heap, move to the **next element of the same list** and add it to the heap.
+
+## Approach
+
+1. Create a `PriorityQueue` as a Min Heap.
+2. Add the first element from every list.
+3. Store:
+
+   * Element value
+   * List index
+   * Element index
+4. Find the initial `currentMax`.
+5. Take the smallest element using `poll()`.
+6. Create the current range using:
+
+   * Left = minimum element
+   * Right = `currentMax`
+7. Update the best range if the current range is smaller.
+8. Move to the next element from the list that provided the minimum.
+9. Update `currentMax`.
+10. Repeat until one list has no more elements.
+11. Return the smallest range.
+
+## Example
+
+**Input:**
+
+```text id="8x5x99"
+[[4,10,15,24,26],
+ [0,9,12,20],
+ [5,18,22,30]]
+```
+
+One valid smallest range is:
+
+```text id="q7c3um"
+[20,24]
+```
+
+Because:
+
+```text id="3yr2vo"
+List 1 → 24
+List 2 → 20
+List 3 → 22
+```
+
+All three lists have at least one element inside `[20,24]`.
+
+## Data Structure
+
+**PriorityQueue / Min Heap**
+
+Each heap element stores:
+
+```text id="r9l0y3"
+[value, listIndex, elementIndex]
+```
+
+This helps us find the minimum value and also know which list should be advanced.
+
+## Complexity
+
+Let `N` be the total number of elements across all lists and `k` be the number of lists.
+
+**Time Complexity:** O(N log k)
+
+**Space Complexity:** O(k)
+
+## Files
+
+* `SmallestRangeCoveringElementsFromKLists.java`
+
